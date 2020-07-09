@@ -1,2 +1,2 @@
-INSERT INTO customers (first_name, last_name, phone_number) VALUES ("Karen", "Jabroni", 7704045555);
-INSERT INTO customers (first_name, last_name, phone_number) VALUES ("Mike", "Jones", 2813308004);
+INSERT INTO customers (first_name, last_name, phone_number, comments, goodVsEvil) VALUES ("Karen", "Jabroni", 7704045555, "complained from the moment she walked in, just terrible", false);
+INSERT INTO customers (first_name, last_name, phone_number, comments, goodVsEvil) VALUES ("Mike", "Jones", 2813308004, "funny guy, great tipper", true);
