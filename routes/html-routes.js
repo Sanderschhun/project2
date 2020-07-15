@@ -11,13 +11,16 @@ module.exports = function(app) {
     res.render("index");
   });
 
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  app.get("/customers", function(req, res) {
+    res.render("customers");
   });
 
   // blog route loads blog.html
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  app.get("/reviews", function(req, res) {
+    res.render("reviews");
   });
+
+
+
 
 };
