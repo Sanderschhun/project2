@@ -1,15 +1,14 @@
 module.exports = function(app) {
 
   app.get("/api/customer/", function(req, res) {
-     db.Customer.findOne({
+     db.Customers.findOne({
        where: {
-        email: req.params.email
-        first: req.params.first
-        last: req.params.last
-        phonenumber: req.params.phonenumber
+        first_name: req.params.first_name
+        last_name: req.params.last_name
+        phone_number: req.params.phone_number
       }
-    }).then(function(dbCustomer) {
-      res.json(dbCustomer);
+    }).then(function(dbCustomers) {
+      res.json(dbCustomers);
     });
   
   }
