@@ -11,14 +11,18 @@ module.exports = function(app) {
     res.render("index");
   });
 
-  app.get("/customers", function(req, res) {
-    res.render("customers");
+  app.get("/signup", function(req, res) {
+    res.render("signup");
   });
 
   // blog route loads blog.html
   app.get("/reviews", function(req, res) {
     res.render("reviews");
   });
+
+  app.get("/login", function(req, res) {
+    res.render("login");
+  })
 
 
 
