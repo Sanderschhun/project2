@@ -1,6 +1,9 @@
 module.exports = function (sequelize, DataTypes) {
-    var customer = sequelize.define("customer", {
-        customerId: DataTypes.INTEGER,
+    var customers = sequelize.define("customers", {
+        id:{
+            type: DataTypes.INTEGER,
+            primaryKey:true
+        },
         customerName:{
             type: DataTypes.STRING,
             len: [2,50],
@@ -9,7 +12,7 @@ module.exports = function (sequelize, DataTypes) {
         phoneNumber:{
             type: DataTypes.INTEGER,
             isNumeric: true,
-            isNull: false,
+            len: [10],
         },
         reviews:{
             type: DataTypes.STRING,
@@ -18,8 +21,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         thumbUpDown:{
             type: DataTypes.BOOLEAN,
-            isNull: false,
         },
     });
-    return customer;
+    return customers;
 };

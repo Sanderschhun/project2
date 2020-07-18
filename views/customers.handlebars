@@ -1,15 +1,20 @@
-// create a sign up sheet 
-
 <div class="container">
-    <form class="signUp">
-        <div class="form">
-            <input type="email" class="form-input" id="userEmail" placeholder="email">
+    <h1>Add a Review</h1>
+    <form class="review">
+        <div class="form-group">
+            <label for="exampleCustomerName">Name of Customer</label>
+            <input type="string" class="form-control" id="customerName" placeholder="name">
         </div>
-        <div class="form">
-            <input type="password" class="form-input" id="userPassword" placeholder="password">
+        <div class="form-group">
+            <label for="examplePhoneNumber">Phone Number?</label>
+            <input type="number" class="form-control" id="phoneNumber" placeholder="phone number">
         </div>
-        <button type="submit" class="btn">Sign Up</button>
+        <div class="form-group">
+            <label for="reviews">Comments and Reviews</label>
+            <input type="string" class="form-control" id="reviews" placeholder="comments">
+        </div>
+        <button type="submit" class="btn">Submit</button>
     </form>
-    <p>login <a id="loginPage" href="login.handlebars">page</a></p>
+    </div>
 </div>
-<script type="text/javascript" src="javascript/signup.js"></script>
+<script type="text/javascript" src="javascript/customers.js"></script>

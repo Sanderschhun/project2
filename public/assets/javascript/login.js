@@ -25,7 +25,7 @@ $(document).ready(function() {
         password: password
       })
         .then(function() {
-          window.location.replace("/members");
+          window.location.replace("/customers");
         })
         .catch(function(err) {
           console.log(err);

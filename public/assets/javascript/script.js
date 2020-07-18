@@ -13,9 +13,9 @@ $(document).ready(function(){
   });
 
 
-  $("#review").on("click", function(event) {
+  $("#customers").on("click", function(event) {
  
-  window.location.href = "/reviews";
+  window.location.href = "/customers";
 
   });
 
