@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
     var customers = sequelize.define("customers", {
-        customerId: DataTypes.INTEGER,
+        id: DataTypes.INTEGER,
         customerName:{
             type: DataTypes.STRING,
             len: [2,50],

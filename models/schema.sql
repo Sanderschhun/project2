@@ -4,7 +4,7 @@ USE customers_db;
 
 CREATE TABLE customers
 (
-    customerId INT NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     customerName VARCHAR(50) NOT NULL,
     phoneNumber INT NOT NULL,
     reviews VARCHAR(2000),
