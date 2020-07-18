@@ -9,7 +9,7 @@ module.exports = function (sequelize, DataTypes) {
         phoneNumber:{
             type: DataTypes.INTEGER,
             isNumeric: true,
-            isNull: false,
+            len: [10],
         },
         reviews:{
             type: DataTypes.STRING,
@@ -18,7 +18,6 @@ module.exports = function (sequelize, DataTypes) {
         },
         thumbUpDown:{
             type: DataTypes.BOOLEAN,
-            isNull: false,
         },
     });
     return customers;
