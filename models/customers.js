@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var customer = sequelize.define("customer", {
+    var customers = sequelize.define("customers", {
         customerId: DataTypes.INTEGER,
         customerName:{
             type: DataTypes.STRING,
@@ -21,5 +21,5 @@ module.exports = function (sequelize, DataTypes) {
             isNull: false,
         },
     });
-    return customer;
+    return customers;
 };

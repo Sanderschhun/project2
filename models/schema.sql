@@ -4,10 +4,9 @@ USE customers_db;
 
 CREATE TABLE customers
 (
-    id INT NOT NULL AUTO_INCREMENT,
-    first_name VARCHAR(35) NOT NULL,
-    last_name VARCHAR(35) NOT NULL,
-    phone_number INT NOT NULL,
+    customerId INT NOT NULL AUTO_INCREMENT,
+    customerName VARCHAR(50) NOT NULL,
+    phoneNumber INT NOT NULL,
     reviews VARCHAR(2000),
     thumbsUpDown BOOLEAN NOT NULL,
     PRIMARY KEY (id)
