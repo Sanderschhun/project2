@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS customers_db;
-CREATE DATABASE customers_db;
-USE customers_db;
+DROP DATABASE IF EXISTS customers;
+CREATE DATABASE customers;
+USE customers;
 
 CREATE TABLE customers
 (
