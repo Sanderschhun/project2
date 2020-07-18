@@ -30,5 +30,14 @@ module.exports = function (app) {
         }
         res.render("customers");
     });
+    
+    app.get("/reviews", function (req, res) {
+      if (req.user) {
+      res.render("reviews");
+      }
+
+      res.render("reviews");
+    })
 
 };
+
